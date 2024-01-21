@@ -37,3 +37,11 @@
 	color: #fff;
 	font-weight: 500;
 }
+
+@media only  screen and (max-width: 700px){
+		.form input{
+			width: calc(100% - 1rem);
+			margin: 0.5rem 0.5rem;
+
+		}
+}
