@@ -5,11 +5,12 @@ import Validation from "./Components/Validation";
 
 function App() {
 	const [valid, setValid] = useState(true);
-
+	const [contacts, setContacts] = useState([]);
+	console.log(contacts);
 	return (
 		<>
 			<Header />
-			<Form valid={valid} setValid={setValid} />
+			<Form setValid={setValid} setContacts={setContacts} />
 			{!valid && <Validation />}
 		</>
 	);
