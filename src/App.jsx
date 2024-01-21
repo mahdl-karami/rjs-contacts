@@ -12,7 +12,7 @@ function App() {
 		<>
 			<Header />
 			<Form setValid={setValid} setContacts={setContacts} />
-			{!valid && <Validation />}
+			<Validation valid={valid}/>
 			<ContactsList contacts={contacts} />
 		</>
 	);
