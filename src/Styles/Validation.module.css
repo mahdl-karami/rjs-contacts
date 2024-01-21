@@ -1,10 +1,15 @@
 .valid {
 	width: 100%;
 	padding: 1rem 3.5rem;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.205);
+	box-shadow: 0 0 10px rgba(255, 0, 0, 0.205);
 	background: rgba(255, 0, 0, 0.199);
 	color: red;
 	border-radius: 10px;
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 	font-weight: 800;
+}
+@media only screen and (max-width: 500px) {
+	.valid {
+		font-size: 0.9rem !important;
+	}
 }
