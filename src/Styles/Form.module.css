@@ -1,5 +1,5 @@
 .form {
-	width: calc(100% - 6rem);
+	width: calc(100%);
 	box-shadow: 0 0 20px #e2e2e29b;
 	border-radius: 10px;
 	padding: 2rem 3rem;
@@ -16,7 +16,7 @@
 	border-radius: 10px;
 	font-weight: bold;
 	color: #6c757d;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	&:focus {
 		border: 2px solid #007bff;
 	}
@@ -27,7 +27,7 @@
 	}
 }
 .form button {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	width: 100%;
 	border: 2px solid #007bff;
 	margin: 0.5rem 0.5rem;
