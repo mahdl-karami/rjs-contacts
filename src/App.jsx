@@ -7,7 +7,6 @@ import ContactsList from "./Components/ContactsList";
 function App() {
 	const [valid, setValid] = useState(true);
 	const [contacts, setContacts] = useState([]);
-	console.log(contacts);
 	return (
 		<>
 			<Header />

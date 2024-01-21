@@ -1,0 +1,43 @@
+.contacts {
+	list-style: none;
+	padding: 2rem 3.5rem;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #e2e2e29b;
+	margin: 2rem 0;
+	color: #6c757d;
+}
+.contacts li {
+	width: 100%;
+	background: #dddddd;
+	margin-bottom: 0.5rem;
+	padding: 0.8rem 1.2rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+}
+.contacts li span {
+	width: 35%;
+	display: flex;
+	align-items: center;
+	&:nth-child(3) {
+		width: 20%;
+	}
+	&:nth-child(4) {
+		width: 10%;
+		justify-content: end;
+	}
+}
+.contacts li span svg {
+	font-size: 1.5rem;
+	margin-right: 0.2rem;
+}
+.contacts li button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
