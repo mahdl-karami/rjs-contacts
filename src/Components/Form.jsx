@@ -10,7 +10,7 @@ export default function Form({ setValid }) {
 		number: "",
 	});
 	return (
-		<form onSubmit={(e) => submitHandler(e, values, setValid)} className={styles.form}>
+		<form onSubmit={(e) => submitHandler(e, values, setValid , setValues)} className={styles.form}>
 			{inputs.map(({ name, type, placeHolder }) => (
 				<input key={name} value={values[name]} name={name} type={type} placeholder={placeHolder} onChange={(e) => changeHandler(e, setValues)}></input>
 			))}
