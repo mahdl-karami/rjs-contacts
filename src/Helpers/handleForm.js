@@ -6,7 +6,7 @@ const submitHandler = (e, values, setValid, setValues, setContacts) => {
 		return;
 	} else {
 		setValid(true);
-		setContacts((contacts) => [...contacts, { ...values, id: String(Math.random() * values.number) + values.firstName }]);
+		setContacts((contacts) => [{ ...values, id: String(Math.random() * values.number) + values.firstName }, ...contacts]);
 		setValues({
 			firstName: "",
 			lastName: "",
