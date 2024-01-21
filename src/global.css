@@ -21,6 +21,7 @@
 
 body {
 	max-width: 1200px;
+	width: 90%; /* global responsive :) */
 	margin: 1rem auto;
 }
 
