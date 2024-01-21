@@ -2,6 +2,7 @@ import { useState } from "react";
 import Form from "./Components/Form";
 import Header from "./Components/Header";
 import Validation from "./Components/Validation";
+import ContactsList from "./Components/ContactsList";
 
 function App() {
 	const [valid, setValid] = useState(true);
@@ -12,6 +13,7 @@ function App() {
 			<Header />
 			<Form setValid={setValid} setContacts={setContacts} />
 			{!valid && <Validation />}
+			<ContactsList contacts={contacts} />
 		</>
 	);
 }
