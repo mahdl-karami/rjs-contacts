@@ -6,13 +6,13 @@ const submitHandler = (e, values, setValid, setValues, setContacts) => {
 		return;
 	} else {
 		setValid(true);
-		setContacts((contacts) => [...contacts, values]);
-		// setValues({
-		// 	firstName: "",
-		// 	lastName: "",
-		// 	email: "",
-		// 	number: "",
-		// });
+		setContacts((contacts) => [...contacts, { ...values, id: String(Math.random() * values.number) + values.firstName }]);
+		setValues({
+			firstName: "",
+			lastName: "",
+			email: "",
+			number: "",
+		});
 	}
 };
 const changeHandler = (e, setValues) => {

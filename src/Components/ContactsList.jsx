@@ -2,26 +2,27 @@ import styles from "../Styles/ContactsList.module.css";
 import { MdOutlineContactPhone } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 import { PiTrash } from "react-icons/pi";
+import { removeHandler } from "../Helpers/handelContacts";
 
-export default function ContactsList({ contacts }) {
+export default function ContactsList({ contacts, setContacts }) {
 	return (
 		<ul className={styles.contacts}>
 			{contacts.length ? (
 				<>
-					{contacts.map((contact, i) => (
+					{contacts.map(({ firstName, lastName, email, number, id }, i) => (
 						<li key={i}>
 							<span>
-								{contact.firstName} {contact.lastName}
+								{firstName} {lastName}
 							</span>
 							<span>
 								<HiOutlineMail />
-								{contact.email}
+								{email}
 							</span>
 							<span>
-								<MdOutlineContactPhone /> {contact.number}
+								<MdOutlineContactPhone /> {number}
 							</span>
 							<span>
-								<button>
+								<button onClick={() => removeHandler(id, contacts, setContacts)}>
 									<PiTrash />
 								</button>
 							</span>
