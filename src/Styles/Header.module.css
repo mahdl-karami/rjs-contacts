@@ -1,0 +1,9 @@
+.header{
+  width: 100%;
+  text-align: center;
+  color: dodgerblue;
+  font-size: 1.4rem;
+}
+.header h1{
+  font-weight: bold;
+}
