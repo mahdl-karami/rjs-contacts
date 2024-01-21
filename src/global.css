@@ -16,11 +16,12 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
 	max-width: 1200px;
-	margin: auto;
+	margin: 1rem auto;
 }
 
 a {
