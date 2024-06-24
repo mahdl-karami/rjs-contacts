@@ -68,6 +68,9 @@
 	}
 }
 @media only screen and (max-width: 500px) {
+	.contacts{
+		padding: .8rem;	
+	}
 	.contacts li span {
 		font-size: 0.9rem !important;
 	}

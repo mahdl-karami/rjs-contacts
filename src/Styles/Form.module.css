@@ -46,6 +46,9 @@
 		}
 }
 @media only screen and (max-width: 500px) {
+	.form{
+  padding: .4rem;	
+  }
 	.form input , .form button {
 		font-size: 0.9rem !important;
 	}
