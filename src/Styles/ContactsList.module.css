@@ -66,6 +66,9 @@
 			display: none;
 		}
 	}
+	.empty{
+		font-size: 80%;
+	}
 }
 @media only screen and (max-width: 500px) {
 	.contacts{
@@ -73,5 +76,8 @@
 	}
 	.contacts li span {
 		font-size: 0.9rem !important;
+	}
+	.empty{
+		font-size: 70%;
 	}
 }
