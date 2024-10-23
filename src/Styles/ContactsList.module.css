@@ -61,6 +61,9 @@
 				content: "Delet Contact";
 				color: #fff;
 			}
+			&:hover{
+				transform: none ;
+			}
 		}
 		svg {
 			display: none;
